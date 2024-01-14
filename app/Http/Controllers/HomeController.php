@@ -13,6 +13,10 @@ class HomeController extends Controller
 {
     public function index(): View
     {
-        return view('home');
+        $barbers=barber::all();
+        $services=service::all();
+        return view('home', compact('barbers', 'services'));
+
     }
+
 }

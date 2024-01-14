@@ -16,17 +16,17 @@ class DatabaseSeeder extends Seeder
          \App\Models\Barber::factory(4)->create();
          \App\Models\Service::factory()->create([
             'name' => 'Silver',
-            'price' => 40000,
+            'price' => 40.77,
         ]);
 
         \App\Models\Service::factory()->create([
             'name' => 'Golden',
-            'price' => 45000,
+            'price' => 45.05,
         ]);
 
         \App\Models\Service::factory()->create([
             'name' => 'Diamond',
-            'price' => 20000,
+            'price' => 20.05,
         ]);
         \App\Models\Appointment::factory(3)->create();
         //  \App\Models\Service::factory(3)->create();

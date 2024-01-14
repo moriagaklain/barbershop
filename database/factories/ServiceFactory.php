@@ -22,7 +22,7 @@ class ServiceFactory extends Factory
         $category = array_values($categories);
         return [
             'name' =>  "silver",
-            'price' => fake()->randomFloat(1, 20, 30),
+            'price' => fake()->randomFloat(2),
         ];
     }
 }

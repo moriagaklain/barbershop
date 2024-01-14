@@ -1,0 +1,263 @@
+/*-----------------------------------*\
+  #ROOT
+\*-----------------------------------*/
+:root {
+    --bs-body-font-family: "Montserrat", "sans-serif";
+    margin: 0;
+    padding: 0;
+}
+
+.html {
+    scroll-behavior: smooth;
+}
+
+.links {
+    text-decoration: none;
+}
+
+.btn-all {
+    transition: all 0.3s;
+}
+
+.btn-all {
+    --bs-btn-padding-y: 0.6rem;
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-font-size: 1.25rem;
+    --bs-btn-bg: #d5a153;
+}
+
+.btn-all:hover {
+    --bs-btn-padding-y: 0.6rem;
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-font-size: 1.25rem;
+    --bs-btn-hover-bg: #1b1b1b;
+    ---bs-btn-border-color: #1b1b1b;
+    --bs-btn-hover-border-color: #1b1b1b;
+}
+
+.card {
+    height: 100%;
+}
+
+/*-----------------------------------*\
+  #NAVBAR & FOOTER
+\*-----------------------------------*/
+.header {
+    z-index: 0;
+    height: 0;
+}
+
+.navbar {
+    padding: 10px 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.footer {
+    background-color: #1b1b1b;
+}
+
+/*animation-navbar*/
+
+.navbar {
+    transition: all 0.5s;
+}
+
+.navbar-scrolled {
+    background-color: #1b1b1b;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-link {
+    color: white;
+    font-weight: 300;
+}
+
+.nav-link:hover {
+    color: #d5a153;
+    font-weight: 300;
+}
+
+/*-----------------------------------*\
+  #MAIN
+\*-----------------------------------*/
+.main {
+    position: relative;
+    background: url(/assets/img/banner.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0 250px;
+}
+
+/*-----------------------------------*\
+  #PRICING
+\*-----------------------------------*/
+.pricing {
+    position: relative;
+    background: url(/assets/img/banner-01.png);
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    padding-block: 50px;
+}
+
+.card-text {
+    margin: 0;
+}
+
+.card-cta {
+    margin: 0;
+    color: #d5a153;
+}
+
+.card-price {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card-price {
+    width: 50vh;
+    height: 20vh;
+    margin: 10px;
+}
+
+.content-price {
+    background-color: #d5a153;
+    padding: 15px 0;
+}
+
+/*-----------------------------------*\
+  #SERVICE
+\*-----------------------------------*/
+.service-card {
+    max-width: 155vh;
+}
+
+/*animation*/
+.button-arrow {
+    transition: all 0.3s;
+}
+
+.button-arrow {
+    color: #1b1b1b;
+}
+
+.button-arrow:hover {
+    color: #d5a153;
+}
+
+/*-----------------------------------*\
+  #GALLERY
+\*-----------------------------------*/
+.photo-g-01 {
+    min-width: 50px;
+}
+
+.row-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.row-gallery .column-gallery {
+    flex: 33.3%;
+    width: auto;
+    overflow: hidden;
+    padding: 0 4px;
+    height: 100%;
+}
+
+.row-gallery .column-gallery img {
+    margin-top: 2%;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .row-gallery .column-gallery {
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .row-gallery .column-gallery {
+        flex: 100%;
+    }
+}
+
+/*animation*/
+.row-gallery .column-gallery img {
+    cursor: pointer;
+    filter: grayscale(1) brightness(0.5);
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.row-gallery .column-gallery img:hover {
+    filter: grayscale(0) brightness(1);
+}
+
+.content-card {
+    position: absolute;
+    inset: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.content-card:hover {
+    transform: scale(1.05);
+}
+
+.button-arrow-gallery {
+    transition: all 0.3s;
+}
+
+.button-arrow-gallery {
+    color: #ffffff;
+}
+
+.button-arrow-gallery:hover {
+    color: #d5a153;
+}
+
+/*-----------------------------------*\
+  #APPOINTMENT
+\*-----------------------------------*/
+.appointment {
+    position: relative;
+    background: url(/assets/img/banner-03.png);
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    padding-block: 50px;
+}
+
+.form-control {
+    border-radius: 0;
+    height: 8vh;
+}
+
+.drop-down {
+    border-radius: 0;
+    height: 8vh;
+    z-index: 2;
+}
+
+/*animation*/
+.btn-appoin {
+    transition: all 0.3s;
+}
+
+.btn-appoin {
+    color: #ffffff;
+}
+
+.btn-appoin:hover {
+    background-color: #d5a153;
+}
