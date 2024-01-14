@@ -222,9 +222,9 @@
                         <div class="col-md-6">
                             <div class="drop-down input-group">
                                 <select class="drop-down w-100 form-select mb-3" aria-label="Select Barber"
-                                    name="service_name">
+                                    name="service" id="service">
                                     <option selected disabled>Select Service</option>
-                                    @foreach ($barbers as $item)
+                                    @foreach ($services as $item)
                                         <option value="{{ $item->id }}">{{ $item->name }}</option>
                                     @endforeach
                                 </select>
@@ -234,7 +234,7 @@
                         <div class="col-md-6">
                             <div class="drop-down input-group">
                                 <select class="drop-down w-100 form-select mb-3" aria-label="Select Barber"
-                                    name="barber_name">
+                                    name="barber" id="barber">
                                     <option selected disabled>Select Barber</option>
                                     @foreach ($barbers as $item)
                                         <option value="{{ $item->id }}">{{ $item->name }}</option>

@@ -28,8 +28,7 @@ class AppointmentFactory extends Factory
             'customer_name' => fake()->name(),
             'service_id' => $serviceId,
             'barber_id' => $barberId,
-            'created_at' => fake()->dateTimeBetween('-1 year', 'now'),
-            'updated_at' => now(),
+            'booking_schedule' =>fake()->dateTimeBetween('now', '+1 week'),
         ];
     }
 }

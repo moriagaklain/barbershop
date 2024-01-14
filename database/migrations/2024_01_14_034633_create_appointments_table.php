@@ -18,6 +18,7 @@ return new class extends Migration
             $table->foreign('service_id')->references('id')->on('services');
             $table->unsignedBigInteger('barber_id');
             $table->foreign('barber_id')->references('id')->on('barbers');
+            $table->date('booking_schedule');
             $table->timestamps();
         });
     }
